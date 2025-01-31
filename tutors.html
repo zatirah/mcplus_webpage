@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meet Our Tutors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        color: black;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #2b0e2d;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        transition: all 0.3s ease;
+      }
+      .navbar.shrink {
+        padding: 10px;
+      }
+      .navbar img {
+        height: 50px;
+      }
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .container {
+        width: 90%;
+        margin: 120px auto 80px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 16px;
+      }
+      .card {
+        background-color: #2b0e2d;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+      .card .content {
+        padding: 16px;
+      }
+      .card h2 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: white;
+      }
+      .card p {
+        color: white;
+        margin: 4px 0;
+      }
+      .footer-container {
+        background-color: #1a001a;
+        color: #b3b3b3;
+        padding: 20px;
+        text-align: left;
+      }
+      .footer-container .logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .footer-container .logo img {
+        height: 50px;
+        margin-right: 10px;
+      }
+      .footer-container .logo h1 {
+        font-size: 24px;
+        color: #ffffff;
+      }
+      .footer-container .social-icons {
+        display: flex;
+        gap: 15px;
+        margin: 20px 0;
+      }
+      .footer-container .social-icons i {
+        font-size: 24px;
+        color: #ffffff;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+      }
+      .footer-container .social-icons i:hover {
+        color: #ff00ff;
+      }
+      .footer-container .footer-text {
+        margin: 20px 0;
+        font-size: 14px;
+        max-width: 800px;
+      }
+      .footer-container .footer-bottom {
+        border-top: 1px solid #333;
+        padding: 10px 0;
+        font-size: 14px;
+      }
+      .footer-container .footer-bottom a {
+        color: #ff00ff;
+        text-decoration: none;
+      }
+      .footer-container .footer-bottom span {
+        color: #ff00ff;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+        <img alt="MC+ Logo" src="logo.png"/>
+        <ul>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="tutors.html">TUTORS</a></li>
+			<li><a href="testimonial.html">TESTIMONIAL</a></li>
+        </ul>
+    </header>
+
+    <main class="container">
+      <div class="grid">
+        <div class="card">
+          <img alt="Tutor Fathi" src="fathi.jpg"/>
+          <div class="content">
+            <h2>Tutor Fathi</h2>
+            <p>Subject: Add Maths / Mathematics</p>
+          </div>
+        </div>
+        <div class="card">
+          <img alt="Tutor Ifwat" src="ifwat.jpg"/>
+          <div class="content">
+            <h2>Tutor Ifwat</h2>
+            <p>Subject: Add Maths / Mathematics</p>
+          </div>
+        </div>
+        <div class="card">
+          <img alt="Tutor Uzairi" src="uzairi.jpg"/>
+          <div class="content">
+            <h2>Tutor Uzairi</h2>
+            <p>Subject: Mathematics</p>
+          </div>
+        </div>
+        <div class="card">
+          <img alt="Tutor Aina" src="aina.jpg"/>
+          <div class="content">
+            <h2>Tutor Aina</h2>
+            <p>Subject: English</p>
+          </div>
+        </div>
+		<div class="card">
+          <img alt="Placeholder for Tutor 5's face" src="maryam.jpg"/>
+          <div class="content">
+            <h2>Tutor Maryam</h2>
+            <p>Subject: English</p>
+          </div>
+        </div>
+        <div class="card">
+          <img alt="Placeholder for Tutor 6's face" src="zack.jpg"/>
+          <div class="content">
+            <h2>Tutor Zack</h2>
+            <p>Subject: Bahasa Melayu</p>
+          </div>
+        </div>
+        <div class="card">
+          <img alt="Placeholder for Tutor 7's face" src="badang.jpg"/>
+          <div class="content">
+            <h2>Tutor Badang</h2>
+            <p>Subject: Business</p>
+          </div>
+        </div>
+        <div class="card">
+          <img alt="Placeholder for Tutor 8's face" src="iqbal.jpg"/>
+          <div class="content">
+            <h2>Tutor Iqbal</h2>
+            <p>Subject: Science</p>
+          </div>
+        </div>
+        <div class="card">
+          <img alt="Placeholder for Tutor 9's face" src="hazeeq.jpg"/>
+          <div class="content">
+            <h2>Tutor Hazeeq</h2>
+            <p>Subject: Chemistry / Physics</p>
+          </div>
+        </div>
+        <div class="card">
+          <img alt="Placeholder for Tutor 10's face" src="sakinah.jpg"/>
+          <div class="content">
+            <h2>Tutor Sakinah</h2>
+            <p>Subject: Chemistry</p>
+          </div>
+        </div>
+        <div class="card">
+          <img alt="Placeholder for Tutor 11's face" src="sara.jpg"/>
+          <div class="content">
+            <h2>Tutor Sara</h2>
+            <p>Subject: Biology</p>
+          </div>
+        </div>
+        <div class="card">
+          <img alt="Placeholder for Tutor 12's face" src="syahmi.jpg"/>
+          <div class="content">
+            <h2>Tutor Syahmi</h2>
+            <p>Subject: History</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="logo">
+          <img alt="MC Plus Logo" src="logo.png"/>
+          <h1>ONLINE TUITION</h1>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/mcplus.my/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://x.com/mcplus_my" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/mcplus.my" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/c/mcplus2020" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@mcplus.my?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="footer-text">
+          When you visit or interact with our sites, services, applications, tools or messaging, we or our authorised service providers may use cookies, web beacons, and other similar technologies for storing information to help provide you with a better, faster and safer experience and for advertising purposes.
+        </div>
+        <div class="footer-bottom">
+          Copyright &copy; <span>IMD318 Introduction to Web Content Management and Design / For Education Purpose Only</span>. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      window.onscroll = function() {shrinkNavbar()};
+
+      function shrinkNavbar() {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 10) {
+          navbar.classList.add("shrink");
+        } else {
+          navbar.classList.remove("shrink");
+        }
+      }
+    </script>
+  </body>
+</html>

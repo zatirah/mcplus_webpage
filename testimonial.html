@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCplus - Testimonials</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 0px;
+            background-color: #2b0e2d;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        .navbar.shrink {
+            padding: 10px;
+        }
+        .navbar img {
+            height: 50px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .testimonials-section {
+            padding: 120px 20px 60px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .testimonials-section h2 {
+            font-size: 4rem;
+            margin-bottom: 60px; /* Increased space below the heading */
+            text-align: left;
+        }
+
+        .testimonial-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .testimonial-box {
+            background: white;
+            color: black;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .testimonial-box img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-box h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .stars {
+            color: gold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .video-container {
+            margin: 80px auto 20px; 
+            text-align: center;
+        }
+
+        .video-container video {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .join-us-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .submit-review {
+            display: block;
+            margin: 40px auto 0;
+            padding: 20px 40px; 
+            font-size: 2rem; 
+            background-color: #800080;
+            color: white;
+            text-align: center;
+            border-radius: 12px;
+            text-decoration: none;
+            width: fit-content;
+            font-weight: bold;
+        }
+
+        .submit-review:hover {
+            background-color: #a020f0;
+        }
+
+        .footer-container {
+            background-color: #1a001a;
+            color: #b3b3b3;
+            padding: 20px;
+            text-align: left;
+        }
+        .footer-container .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .footer-container .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .footer-container .logo h1 {
+            font-size: 24px;
+            color: #ffffff;
+        }
+        .footer-container .social-icons {
+            display: flex;
+            margin: 20px 0;
+        }
+        .footer-container .social-icons i {
+            font-size: 24px;
+            color: #ffffff;
+            margin: 0 10px;
+        }
+        .footer-container .footer-text {
+            margin: 20px 0;
+            font-size: 14px;
+            max-width: 800px;
+        }
+        .footer-container .footer-bottom {
+            border-top: 1px solid #333;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+        .footer-container .footer-bottom a {
+            color: #ff00ff;
+            text-decoration: none;
+        }
+        .footer-container .footer-bottom span {
+            color: #ff00ff;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+      <img alt="MC+ Logo" src="logo.png"/>
+      <ul>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="courses.html">COURSES</a></li>
+        <li><a href="tutors.html">TUTORS</a></li>
+		<li><a href="testimonial.html">TESTIMONIAL</a></li>
+      </ul>
+    </header>
+
+    
+    <section class="testimonials-section">
+        <h2>What Our Students Say...</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-box"><img src="student1.jpg" alt="Student"><h3>NURUL AQILAH SYAHIRAH</h3><div class="stars">★★★★★</div><p class="testimonial-text">"it was a good and new experience for me sebab saya memang tak suka bila online class tapi bila masuk MC PLUS . WOW saya rasa sukaa and result exam saya pun menaik . cikgu cikgu kat sini pun sporting and cara diorang ajar cepat faham . saya baru je masuk tahun ni and this!"</p></div>
+            <div class="testimonial-box"><img src="student2.jpg" alt="Student"><h3>nur</h3><div class="stars">★★★★★</div><p class="testimonial-text">"nothing much to say . mcplus really change me from someone who don’t love to study to someone who love study . now what i’m gonna do is to make my parents proud , nothing else. tqsm."</p></div>
+            <div class="testimonial-box"><img src="student3.jpg" alt="Student"><h3>nadgilmore</h3><div class="stars">★★★★★</div><p class="testimonial-text">"idk how to say this but mcplus THE BESTT 😭😭❤ sumpah best gile study ngan diorng. pling suke bile mcplus slalu buat free classes. trooper and tutor pun semua sporting gile. lepas join mc plus lagi semangat nak belajar. result pun dah ade improvement. thankss mc plus love you foreverr <33"</p></div>
+            <div class="testimonial-box"><img src="student4.jpg" alt="Student"><h3>amirul</h3><div class="stars">★★★★★</div><p class="testimonial-text">"MCplus turned my studies around. Now I actually enjoy learning!"</p></div>
+            <div class="testimonial-box"><img src="student5.jpg" alt="Student"><h3>siti aisyah</h3><div class="stars">★★★★★</div><p class="testimonial-text">"MCPLUS IS A GREAT TUITION FOR ALL STUDENTS. SPM STUDENTS AND OTHER STUDENTS CAN TRY TO JOIN THE SEMINARS THEY CONDUCTED. I HAD A GREAT TIME WITH THE TEACHERS. EHH, I WON’T MISS THE TROOPERS TOO. THEY’RE MY FRIENDS WHO HELPED ME TO JOIN THE CLASS AHEAD. I WON’T MISS THIS FAMILY UNTIL FOREVER. I’LL"</p></div>
+            <div class="testimonial-box"><img src="student6.jpg" alt="Student"><h3>daniel</h3><div class="stars">★★★★★</div><p class="testimonial-text">"ngl, mcplus is THE BEST TUITION I ever had. srsly fham gile blajar dgn mcplus 😭❤. tutor pun semua caring n sporting. Thank you SOOO MUCHH MCPLUSS. LUVVV U ALL FOREVERR"</p></div>
+            <div class="testimonial-box"><img src="student7.jpg" alt="Student"><h3>iza</h3><div class="stars">★★★★★</div><p class="testimonial-text">"Alhamdulillah.. semenjak ikut mc+ ter…rajin la pulak belajar🤣 actually cg2 yg mngajar mmg best.. ehh esok ada seminar slowdown f4 ni🫶🏻 tak sabar hahahsh… Apa2 pn setiap ilmu yang saya dapat mudah faham untuk saya yang selalu tak berapa nak faham kalau belajar kat skolah😭.. Alhamdulillah.. Doakan saya 9A SPM🤩🫶🏻"</p></div>
+            <div class="testimonial-box"><img src="student8.jpg" alt="Student"><h3>adam</h3><div class="stars">★★★★★</div><p class="testimonial-text">"Very good experience you definitely should join mcplus. Experience about tutors English Ms Maryam and Ms Nuha and Sir Arif. They teach me the easy and fun way. They are both fun and cute Bahasa Melayu Sir Daniel and Ms Nuha Sir Daniel is handsome and fun too. Ms Nuha gives us like quiz online"</p></div>
+            <div class="testimonial-box"><img src="student9.jpg" alt="Student"><h3>sarah</h3><div class="stars">★★★★★</div><p class="testimonial-text">"Such a great learning platform!helps me a lot in mathematics and science.All the tutors were friendly and cute tho(｡♡‿♡｡) I LOVEEE MCPLUSSS"</p></div>
+        </div>
+
+       
+        <div class="video-container">
+            <video controls>
+                <source src="mcplus-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        
+        <p class="join-us-text">Join us to be a PLUSIAN now</p>
+
+        
+        <a href="https://mcplus.my/submit-your-testimonial/" class="submit-review">Submit Your Review</a>
+    </section>
+
+    
+    <footer>
+    <div class="footer-container">
+        <div class="logo">
+            <img alt="MC Plus Logo" src="logo.png"/>
+            <h1>ONLINE TUITION</h1>
+        </div>
+        <div class="social-icons">
+		<a href="https://www.facebook.com/mcplus.my/" target="_blank"><i class="fab fa-facebook"></i></a>
+		<a href="https://x.com/mcplus_my" target="_blank"><i class="fab fa-twitter"></i></a>
+		<a href="https://instagram.com/mcplus.my" target="_blank"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.youtube.com/c/mcplus2020" target="_blank"><i class="fab fa-youtube"></i></a>
+		<a href="https://www.tiktok.com/@mcplus.my?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+	</div>
+        <div class="footer-text">
+            When you visit or interact with our sites, services, applications, tools or messaging, we or our authorised service providers may use cookies, web beacons, and other similar technologies for storing information to help provide you with a better, faster and safer experience and for advertising purposes.
+        </div>
+        <div class="footer-bottom">
+            Copyright © <span>IMD318 Introduction to Web Content Management and Design  / For Education Purpose Only</span>. All rights reserved.
+        </div>
+    </div>
+	</footer>
+	
+	<script>
+	window.onscroll = function() {shrinkNavbar()};
+
+        function shrinkNavbar() {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 10) {
+                navbar.classList.add("shrink");
+            } else {
+                navbar.classList.remove("shrink");
+            }
+        }
+	</script>
+</body>
+</html>
